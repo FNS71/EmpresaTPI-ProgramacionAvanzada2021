@@ -5,9 +5,9 @@ TPI Empresa de Desarrollo
 ### Base de datos
 Se requiere una base de datos en el motor PostgreSQL como se habló en la clase. Utilizamos el JDBC Driver de PostgreSQL, librería incluida en el proyecto.
 La configuración de acceso la encuentra en la clase "Conexion" del package Modelos (ubicación: Modelos/Conexion.java).
-Se deben cambiar las variables del comienzo del archivo donde se indica el `user`, `contra` y `db`.
+Se deben cambiar las variables del comienzo del archivo donde se indica el `usuario`, `contra` y `DB`.
 
-Para el funcionamiento del programa solo es necesario que exista una base de datos creada (no importa el nombre, siempre y cuando la variable `db` previamente mencionada esté correctamente cargada). El propio sistema se encarga de ejecutar una Query para crear todas las tablas y relaciónes.
+Para el funcionamiento del programa solo es necesario que exista una base de datos creada (no importa el nombre, siempre y cuando la variable `DB` previamente mencionada esté correctamente cargada). El propio sistema se encarga de ejecutar una Query para crear todas las tablas y relaciónes.
 
 En caso de que las tablas no estén generadas (como la primera vez que inicie el programa) le aparecerá un aviso (`JOptionPane.showConfirmDialog`), al cual debe darle `yes` para que se le creen todas las tablas. Puede ver las salidas del script en la consola, o consultar el script en el archivo `scriptInicial.sql` ubicado en el package Modelos.
 
